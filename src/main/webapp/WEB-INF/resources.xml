@@ -6,21 +6,7 @@
     <!-- H2 Database -->
     <Resource id="PlayersDataSource" type="DataSource">
         JdbcDriver = org.h2.Driver
-        JdbcUrl = jdbc:h2:~/h2database/PlayerDB;AUTO_SERVER=TRUE;
-        UserName = as
-        Password = as
-        InitialSize = 1
-        MaxActive = 10
-        MaxWaitTime = 10 seconds
-        MaxIdle = 2
-        MinIdle = 1
-        ValidationQuery = SELECT 1 FROM DUAL
-        TestOnBorrow = true
-        TestWhileIdle = true
-        TimeBetweenEvictionRuns = 2 min
-        removeAbandoned = true
-        removeAbandonedTimeout = 600
-        logAbandoned = true
-        jmxEnabled = true
+        JdbcUrl = jdbc:h2:~/test;AUTO_SERVER=TRUE;
+        UserName = sa
     </Resource>
 </tomee>
